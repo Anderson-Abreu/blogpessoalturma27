@@ -19,7 +19,7 @@ tipoUsuario: string
     private router: Router
   ) { }
 
-  ngOnInit(){
+  ngOnInit(){ 
     window.scroll(0,0)
   }
 
@@ -40,7 +40,7 @@ tipoUsuario: string
     if(this.user.usuario.length<3){
       alert('preencha o campo usuario com pelo menos 3 caracters')
     }
-
+  
     this.user.tipo = this.tipoUsuario
 
     if(this.user.senha.length<5){
