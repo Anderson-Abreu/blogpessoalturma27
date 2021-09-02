@@ -48,6 +48,7 @@ tipoUsuario: string
     }else if(this.user.senha != this.confirmarSenha){
       alert('As senhas estão incorretas!!!')
     }else{
+      console.log(this.user.nome)
       this.authService.cadastrar(this.user).subscribe((resp:User)=>{
         this.user = resp
         this.router.navigate(['/entrar'])
