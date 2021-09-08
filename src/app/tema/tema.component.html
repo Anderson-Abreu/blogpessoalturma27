@@ -51,7 +51,7 @@
         </thead>
 
         <tbody>
-          <tr *ngFor='let item of listaTemas'>
+          <tr *ngFor='let item of listaTemas | orderBy : key'>
             <th>{{item.id}}</th>
             <td>{{item.descricao}}</td>
             <td class="d-flex justify-content-end">
