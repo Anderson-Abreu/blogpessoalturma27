@@ -20,6 +20,7 @@ export class TemaComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log(environment.token)
     if(environment.token == ''){
       this.router.navigate(['/entrar'])
     }

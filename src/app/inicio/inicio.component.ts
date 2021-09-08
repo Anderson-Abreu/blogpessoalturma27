@@ -73,6 +73,11 @@ export class InicioComponent implements OnInit {
     this.user.id = this.idUser
     this.postagem.usuario = this.user
 
+    console.log(this.tema.id)
+    console.log(this.postagem.tema)
+    console.log(this.user.id)
+    console.log(this.postagem.usuario)
+
     this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem) => {
       this.postagem = resp
       alert('Postagem realizada com sucesso!')
